@@ -2,6 +2,7 @@ package com.roopa.testdemo;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.List;
 
 public class SwappingNumbers {
 
@@ -11,8 +12,8 @@ public class SwappingNumbers {
         arr[i] = arr[j];
         arr[j] = temp;
     }
-    private void swapwithouttemp(int[] arr,int i,int j){
-        
+    private void swapwithouttemp(List<Integer> arr, int i, int j){
+        Collections.swap(arr,i,j);
     }
 }
 
